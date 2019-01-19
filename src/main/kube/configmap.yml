@@ -1,0 +1,8 @@
+apiVersion: "v1"
+kind: "ConfigMap"
+metadata:
+  name: camel-amqp2kafka-configmap
+data:
+  application.properties: |-
+    amqphub.amqp10jms.remote-url=amqp://192.168.99.1:5672
+    camel.component.kafka.brokers=my-cluster-kafka-bootstrap:9092
